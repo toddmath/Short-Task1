@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
+  <script src="redirection-mobile.js"></script>
+  <script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    SA.redirection_mobile({
+      // mobile_url : "/mobile",
+      // mobile_prefix : "https"
+    });
+</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Desktop Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Short Task #1</h1>
+    <h2>CIS128 Mobile Web App Development</h2>
+  </header>
+  <main>
+    <hr />
+    <p>Welcome to the Desktop Version of my Web Page!!</p>
+
+    <h3>WURFL Capabilities</h3>
+    <dl>
+      <dt>advertised_browser</dt>
+      <dd>Shows the name of the device browser, based off of it's advertised user agent.</dd>
+      <dt>is_wireless_device</dt>
+      <dd>Boolean, that returns true when the device is found to have wireless(3G, LTE) capabilities. is_mobile is an
+        alias to this, as well.</dd>
+      <dt>max_image_width</dt>
+      <dd>Returns the maximum width in pixels, the device can view on it's screen. It automatically defaults to
+        mobile viewports specified inside meta tags, if present.</dd>
+    </dl>
+  </main>
+</body>
+
+</html>
