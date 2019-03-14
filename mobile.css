@@ -62,15 +62,17 @@ dt:before {
 }
 
 dd {
-  padding-left: 50px;
+  padding-left: 14px;
   background: no-repeat left top;
   padding-bottom: 0.6em;
+  margin-right: 10px;
 }
 
 dl {
   padding-left: 2em;
-  margin-left: 1em;
+  margin-left: 0.4em;
   border-left: 3px solid;
+  margin-bottom: 20px;
 }
 
 h1, h2 {
@@ -90,10 +92,13 @@ h2 {
 }
 
 h3 {
+  margin-left: auto;
   font-weight: bold;
   font-size: 1.3em;
   padding-bottom: 0.6em;
-  text-align: center;
+  margin-right: auto;
+  display: inline-block;
+  padding: 0.6em;
 }
 
 header {
@@ -101,11 +106,12 @@ header {
 }
 
 p {
-  padding-top: 1.8em;
+  padding-top: 1em;
   font-weight: bold;
-  padding-left: 1em;
-  padding-right: 3em;
-  padding-bottom: 1.4em;
-  font-size: 1.2em;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 1em;
+  font-size: 1em;
   color: #2962ff;
+  text-align: center;
 }
